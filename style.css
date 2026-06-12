@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    background: #a8a8d7;
+    font-family: 'Brush Script MT';
+}
+
+/* LANDING PAGE */
+
+#typing {
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 5rem;
+    white-space: nowrap;
+}
+
+#startBtn {
+    position: absolute;
+    background: none;
+    border: none;
+    top: 50vh;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: none;
+}
+
+#startBtn img {
+    width: 15vw;
+    transition: transform 0.2s;
+}
+
+#startBtn:hover img {
+    transform: scale(1.05);
+}
+
+#startBtn:active img {
+    transform: scale(0.95);
+}
+
+
+
+/* PHOTO MEMORIES */
+#mems {
+    display: none;
+}
+
+#photoButton {
+    position: absolute;
+    background: none;
+    border: none;
+    top: 1vh;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+#photoButton img{
+    width: 10vw;
+}
+
+#photoButton:hover img {
+    transform: scale(1.05);
+}
+
+#photoButton:active img {
+    transform: scale(0.95);
+}
+
+#clickButtonReminder {
+    position: absolute;
+    font-size: 3rem;
+    top: 2vh;
+    left: 20%;
+    color: white;
+}
+
+#photoContainer {
+    margin-top: 25vh;
+    margin-left: 10vw;
+     margin-right: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90vw;
+
+
+}
+
+.memoryPhoto {
+    width: 35vh;
+}
+
+.memoryPhoto:hover {
+    transform: rotate(0deg) scale(1.08);
+}
+
+/* LETTERS */
+#letters {
+    display: none;
+}
+
+
+.letterImage {
+    display: none;
+
+    width: 60vw;
+
+    margin: 2rem auto;
+
+    display: none;
+}
+
+.envelope {
+    width: 60vw;
+    display: block;
+    margin: 1vh auto;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.envelope:hover {
+    transform: translateY(-10px);
+}
+
+.envelope:active {
+    transform: scale(0.95);
+}
+
+#scrollPrompt {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+
+    margin-top: 5vh;
+}
+
+#endMessage {
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+
+    margin: 5vh 0;
+}
